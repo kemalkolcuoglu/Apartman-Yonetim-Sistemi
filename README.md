@@ -1,4 +1,4 @@
-# Apartman-Yonetim-Sistemi 180320
+# Apartman Yönetim Sistemi 180320
 
 .NET Framework v4.6.1 baz alınarak ADO.NET teknolojisi ile Access veritabanı kullanılmıştır. Çok katmanlı mimari ile çalışılmıştır. IslemKatmani'nda veritabanı bağlantısı, veri yazma ve okuma, verileri Excel dosyasına yazma gibi işlemlerin yürütüldüğü kodlar mevcuttur. KayitKatmani'nda veritabanı modeli olarak kullanılan sınıflar ve nitelikleri mevcuttur.
 
