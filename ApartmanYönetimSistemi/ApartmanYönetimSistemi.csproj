@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0535E859-65D5-490D-A1C9-E0FA44D6740C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ApartmanYönetimSistemi</RootNamespace>
+    <AssemblyName>ApartmanYönetimSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ekle\AidatEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\AidatEkle.Designer.cs">
+      <DependentUpon>AidatEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle\AracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\AracEkle.Designer.cs">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle\EskiDaireEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\EskiDaireEkle.Designer.cs">
+      <DependentUpon>EskiDaireEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle\DaireEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\DaireEkle.Designer.cs">
+      <DependentUpon>DaireEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle\GiderEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\GiderEkle.Designer.cs">
+      <DependentUpon>GiderEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle\IKontrol.cs" />
+    <Compile Include="Ekle\OtomatikAidatEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\OtomatikAidatEkle.Designer.cs">
+      <DependentUpon>OtomatikAidatEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\AidatGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\AidatGoruntule.Designer.cs">
+      <DependentUpon>AidatGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\AidatIstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\AidatIstatistik.Designer.cs">
+      <DependentUpon>AidatIstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\AracGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\AracGoruntule.Designer.cs">
+      <DependentUpon>AracGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\EskiDaireGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\EskiDaireGoruntule.Designer.cs">
+      <DependentUpon>EskiDaireGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\DaireGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\DaireGoruntule.Designer.cs">
+      <DependentUpon>DaireGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\GiderleriGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\GiderleriGoruntule.Designer.cs">
+      <DependentUpon>GiderleriGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\KisiGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\KisiGoruntule.Designer.cs">
+      <DependentUpon>KisiGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goruntuleme\YakitGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goruntuleme\YakitGoruntule.Designer.cs">
+      <DependentUpon>YakitGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkinda.Designer.cs">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciSifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciSifreDegistir.Designer.cs">
+      <DependentUpon>KullaniciSifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ekle\KisiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\KisiEkle.Designer.cs">
+      <DependentUpon>KisiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle\YakitEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle\YakitEkle.Designer.cs">
+      <DependentUpon>YakitEkle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ekle\AidatEkle.resx">
+      <DependentUpon>AidatEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle\AracEkle.resx">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle\EskiDaireEkle.resx">
+      <DependentUpon>EskiDaireEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle\DaireEkle.resx">
+      <DependentUpon>DaireEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle\GiderEkle.resx">
+      <DependentUpon>GiderEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle\OtomatikAidatEkle.resx">
+      <DependentUpon>OtomatikAidatEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\AidatGoruntule.resx">
+      <DependentUpon>AidatGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\AidatIstatistik.resx">
+      <DependentUpon>AidatIstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\AracGoruntule.resx">
+      <DependentUpon>AracGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\EskiDaireGoruntule.resx">
+      <DependentUpon>EskiDaireGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\DaireGoruntule.resx">
+      <DependentUpon>DaireGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\GiderleriGoruntule.resx">
+      <DependentUpon>GiderleriGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\KisiGoruntule.resx">
+      <DependentUpon>KisiGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goruntuleme\YakitGoruntule.resx">
+      <DependentUpon>YakitGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkinda.resx">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSifreDegistir.resx">
+      <DependentUpon>KullaniciSifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ekle\KisiEkle.resx">
+      <DependentUpon>KisiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle\YakitEkle.resx">
+      <DependentUpon>YakitEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IslemKatmani\IslemKatmani.csproj">
+      <Project>{863c8742-ba11-4fd5-9779-e1406d9554db}</Project>
+      <Name>IslemKatmani</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KayitKatmani\KayitKatmani.csproj">
+      <Project>{9b883571-0c55-4ffa-8c72-6aa1b76d9fa3}</Project>
+      <Name>KayitKatmani</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
